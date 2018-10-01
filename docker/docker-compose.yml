@@ -1,0 +1,16 @@
+version: '3'
+services:
+  db-people:
+    build:
+      context: ./db-people/
+    image: shipstone/glowroot-demo-people-db:1.0
+    container_name: people-db
+    ports:
+      - 5432:5432
+  db-insee:
+    build:
+      context: ./db-insee/
+    image: shipstone/glowroot-demo-insee-db:1.0
+    container_name: insee-db
+    ports:
+      - 5433:5432
