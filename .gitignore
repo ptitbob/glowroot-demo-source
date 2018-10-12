@@ -5,3 +5,11 @@
 
 
 **/target
+
+
+.DS_store
+
+glowroot/data/data.h2.db
+
+glowroot/data/
+

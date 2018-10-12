@@ -1,0 +1,57 @@
+[
+  {
+    "className": "org.shipstone.demo.glowroot.people.service.InseeService",
+    "methodName": "*",
+    "methodParameterTypes": [
+      ".."
+    ],
+    "captureKind": "transaction",
+    "transactionType": "Web",
+    "transactionNameTemplate": "InseeService",
+    "alreadyInTransactionBehavior": "capture-trace-entry",
+    "traceEntryMessageTemplate": "{{this}}{{methodName}}{{_}}",
+    "timerName": "InseeService"
+  },
+  {
+    "className": "org.shipstone.demo.glowroot.people.service.PersonService",
+    "methodName": "*",
+    "methodParameterTypes": [
+      ".."
+    ],
+    "captureKind": "transaction",
+    "transactionType": "Web",
+    "transactionNameTemplate": "PersonService",
+    "alreadyInTransactionBehavior": "capture-trace-entry",
+    "traceEntryMessageTemplate": "{{this}}{{methodName}}{{_}}",
+    "traceEntryStackThresholdMillis": 20,
+    "timerName": "PersonService"
+  },
+  {
+    "className": "org.shipstone.demo.glowroot.people.web.*",
+    "methodName": "*",
+    "methodParameterTypes": [
+      ".."
+    ],
+    "captureKind": "transaction",
+    "transactionType": "Web",
+    "transactionNameTemplate": "endpoint",
+    "alreadyInTransactionBehavior": "capture-trace-entry",
+    "traceEntryMessageTemplate": "{{this}}->{{methodName}}{{1}}==>{{_}}",
+    "traceEntryStackThresholdMillis": 10,
+    "timerName": "endpoint"
+  },
+  {
+    "className": "org.shipstone.demo.glowroot.people.web.PeopleEndpoint",
+    "methodName": "getById",
+    "methodParameterTypes": [
+      "java.lang.Long"
+    ],
+    "captureKind": "transaction",
+    "transactionType": "endpoint",
+    "transactionNameTemplate": "personEndpoint.getById",
+    "transactionSlowThresholdMillis": 10,
+    "alreadyInTransactionBehavior": "capture-trace-entry",
+    "traceEntryMessageTemplate": "{{this}}->{{methodName}}{{0}}==>{{_}}",
+    "timerName": "endpoint"
+  }
+]

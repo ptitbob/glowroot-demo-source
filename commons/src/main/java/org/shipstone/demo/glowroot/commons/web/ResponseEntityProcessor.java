@@ -24,6 +24,12 @@ public interface ResponseEntityProcessor {
     return new ResponseEntity<>(list, httpHeaders, httpStatus);
   }
 
+  default <D> ResponseEntity<List<D>> responseEntity(Page<D> page) {
+    HttpHeaders httpHeaders = new HttpHeaders();
+    HttpStatus httpStatus = processHeaderAndStatus(page, httpHeaders);
+    return new ResponseEntity<>(page.getContent(), httpHeaders, httpStatus);
+  }
+
   private <E> HttpStatus processHeaderAndStatus(Page<E> page, HttpHeaders httpHeaders) {
     httpHeaders.add("x-total-element", String.valueOf(page.getTotalElements()));
     httpHeaders.add("x-total-page", String.valueOf(page.getTotalPages()));

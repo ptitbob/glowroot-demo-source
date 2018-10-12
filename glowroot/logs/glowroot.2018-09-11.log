@@ -1,0 +1,14 @@
+2018-09-11 00:17:20.401 INFO  org.glowroot - Glowroot version: 0.10.12, built 2018-06-22 00:08:17 +0000
+2018-09-11 00:17:20.406 INFO  org.glowroot - Java version: 10.0.1
+2018-09-11 00:17:21.723 INFO  org.glowroot - plugins loaded: Cassandra Plugin, EJB Plugin, Elasticsearch Plugin, Executor Plugin, Grails Plugin, Hibernate Plugin, HTTP Client Plugin, Java HTTP Server Plugin, JAX-RS Plugin, Jdbc Plugin, JMS Plugin, JSF Plugin, JSP Plugin, Logger Plugin, Play Plugin, Netty Plugin, Quartz Plugin, Redis Plugin, Servlet Plugin, Spring Plugin, Struts Plugin
+2018-09-11 00:17:23.208 INFO  org.glowroot - creating glowroot schema...
+2018-09-11 00:17:23.478 INFO  org.glowroot - glowroot schema created
+2018-09-11 00:17:23.826 INFO  org.glowroot - UI listening on 127.0.0.1:4000 (to access the UI from remote machines, change the bind address to 0.0.0.0, either in the Glowroot UI under Configuration > Web or directly in the admin.json file, and then restart JVM to take effect)
+2018-09-11 23:41:33.404 INFO  org.glowroot - Glowroot version: 0.10.12, built 2018-06-22 00:08:17 +0000
+2018-09-11 23:41:33.410 INFO  org.glowroot - Java version: 10.0.1
+2018-09-11 23:41:35.144 INFO  org.glowroot - plugins loaded: Cassandra Plugin, EJB Plugin, Elasticsearch Plugin, Executor Plugin, Grails Plugin, Hibernate Plugin, HTTP Client Plugin, Java HTTP Server Plugin, JAX-RS Plugin, Jdbc Plugin, JMS Plugin, JSF Plugin, JSP Plugin, Logger Plugin, Play Plugin, Netty Plugin, Quartz Plugin, Redis Plugin, Servlet Plugin, Spring Plugin, Struts Plugin
+2018-09-11 23:41:38.096 INFO  org.glowroot - UI listening on 127.0.0.1:4000 (to access the UI from remote machines, change the bind address to 0.0.0.0, either in the Glowroot UI under Configuration > Web or directly in the admin.json file, and then restart JVM to take effect)
+2018-09-11 23:47:12.426 INFO  org.glowroot - Glowroot version: 0.10.12, built 2018-06-22 00:08:17 +0000
+2018-09-11 23:47:12.437 INFO  org.glowroot - Java version: 10.0.1
+2018-09-11 23:47:14.374 INFO  org.glowroot - plugins loaded: Cassandra Plugin, EJB Plugin, Elasticsearch Plugin, Executor Plugin, Grails Plugin, Hibernate Plugin, HTTP Client Plugin, Java HTTP Server Plugin, JAX-RS Plugin, Jdbc Plugin, JMS Plugin, JSF Plugin, JSP Plugin, Logger Plugin, Play Plugin, Netty Plugin, Quartz Plugin, Redis Plugin, Servlet Plugin, Spring Plugin, Struts Plugin
+2018-09-11 23:47:16.602 INFO  org.glowroot - UI listening on 127.0.0.1:4000 (to access the UI from remote machines, change the bind address to 0.0.0.0, either in the Glowroot UI under Configuration > Web or directly in the admin.json file, and then restart JVM to take effect)
