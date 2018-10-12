@@ -7,7 +7,7 @@ create table person (
   firstname varchar(255),
   lastname varchar(255),
   login varchar(100),
-  zipcode varchar(50)
+  city_inseeid varchar(10)
 );
 alter table person
   add constraint pk_person primary key (person_id);

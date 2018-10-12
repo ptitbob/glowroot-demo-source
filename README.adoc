@@ -1,0 +1,26 @@
+= Applications exemple
+
+Deux API REST interconnecté pour illustrer l'utilisation de Glowroot.
+
+== 1 - Initialisation
+
+
+== 2 - Présentation des APIs
+
+Pour l'exemple, nous avons deux API, people & insee.
+Insee est une API en lecture seule permettant de recupérer les villes de France.
+Elle ne sert que de support pour montrer la trace de communication http entre deux serveurs.
+
+People est une simple API en R/W permettant d'enregistrer des personnes et de déclarer une ville au cas ou afin de provoquer la communication interserveur.
+
+== 3 - Les appels
+
+Les appels pour l'exemple se font essentiellement via https://httpie.org/[HTTPie].
+
+. Liste des personnes : `http :8080/people`
+. Création d'une personne
+    .. sans ville : `http POST :8080/people <<< '{"login":"toto"}'`
+    .. avec ville et CP valide :
+
+
+
