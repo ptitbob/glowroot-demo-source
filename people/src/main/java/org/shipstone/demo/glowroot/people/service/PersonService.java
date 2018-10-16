@@ -40,7 +40,6 @@ public class PersonService {
     } catch (InterruptedException e) {
       e.printStackTrace();
     }
-
     return personRepository.findById(personId).orElseThrow(() -> new PersonNotFouncException(personId));
   }
 
