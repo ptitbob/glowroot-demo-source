@@ -129,14 +129,14 @@
       "properties": {
         "captureBindParameters": true,
         "captureResultSetNavigate": true,
-        "captureResultSetGet": false,
+        "captureResultSetGet": true,
         "captureGetConnection": true,
         "captureConnectionClose": true,
         "capturePreparedStatementCreation": true,
-        "captureStatementClose": false,
+        "captureStatementClose": true,
         "captureTransactionLifecycleTraceEntries": false,
         "captureConnectionLifecycleTraceEntries": false,
-        "stackTraceThresholdMillis": 1000.0
+        "stackTraceThresholdMillis": 10.0
       }
     },
     {
@@ -195,7 +195,7 @@
     {
       "id": "spring",
       "properties": {
-        "useAltTransactionNaming": false
+        "useAltTransactionNaming": true
       }
     },
     {
@@ -205,18 +205,43 @@
   ],
   "instrumentation": [
     {
+      "className": "org.shipstone.demo.glowroot.people.service.PersonService",
+      "methodName": "*",
+      "methodParameterTypes": [
+        ".."
+      ],
+      "captureKind": "transaction",
+      "transactionType": "Web",
+      "transactionNameTemplate": "PersonService",
+      "alreadyInTransactionBehavior": "capture-trace-entry",
+      "traceEntryMessageTemplate": "{{this}}->{{methodName}}={{_}}",
+      "timerName": "serviceTimer"
+    },
+    {
+      "className": "org.shipstone.demo.glowroot.people.web.PeopleEndpoint",
+      "methodName": "*",
+      "methodParameterTypes": [
+        ".."
+      ],
+      "captureKind": "transaction",
+      "transactionType": "Web",
+      "transactionNameTemplate": "personEndpoint",
+      "alreadyInTransactionBehavior": "capture-trace-entry",
+      "traceEntryMessageTemplate": "{{this}}->{{methodName}}=>{{_}}",
+      "timerName": "endpointTimer"
+    },
+    {
       "className": "org.shipstone.demo.glowroot.people.web.PeopleEndpoint",
       "methodName": "getById",
       "methodParameterTypes": [
-        "java.lang.Long"
+        ".."
       ],
       "captureKind": "transaction",
-      "transactionType": "endpoint",
-      "transactionNameTemplate": "personEndpoint.getById",
-      "transactionSlowThresholdMillis": 10,
+      "transactionType": "Web",
+      "transactionNameTemplate": "personEndpoint",
       "alreadyInTransactionBehavior": "capture-trace-entry",
-      "traceEntryMessageTemplate": "{{this}}->{{methodName}}{{0}}==>{{_}}",
-      "timerName": "endpoint"
+      "traceEntryMessageTemplate": "{{this}}.{{methodName}}( {{0}} ) => {{_}}",
+      "timerName": "personTimer"
     }
   ]
 }
