@@ -1,0 +1,5 @@
+2018-10-17 01:21:58.046 INFO  org.glowroot - Glowroot version: 0.11.1, built 2018-10-01 23:15:02 +0000
+2018-10-17 01:21:58.050 INFO  org.glowroot - Java version: 10.0.1
+2018-10-17 01:22:03.687 INFO  org.glowroot - plugins loaded: Cassandra Plugin, EJB Plugin, Elasticsearch Plugin, Executor Plugin, Grails Plugin, Hibernate Plugin, HTTP Client Plugin, Java HTTP Server Plugin, JAX-RS Plugin, Jdbc Plugin, JMS Plugin, JSF Plugin, JSP Plugin, Logger Plugin, Play Plugin, Netty Plugin, Quartz Plugin, Redis Plugin, Servlet Plugin, Spring Plugin, Struts Plugin
+2018-10-17 01:22:04.799 INFO  org.glowroot - agent id: insee
+2018-10-17 01:22:05.744 INFO  org.glowroot - connected to the central collector http://localhost:8181, version 0.11.1, built 2018-10-01 23:15:02 +0000

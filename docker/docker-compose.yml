@@ -14,3 +14,15 @@ services:
     container_name: insee-db
     ports:
       - 5433:5432
+  db-cassandra:
+    image: cassandra:3.11
+    container_name: cassandra-db
+  glowroot:
+    image: glowroot/glowroot-central:0.11.1
+    container_name: glowroot
+    ports:
+      - 4000:4000
+      - 8181:8181
+    links:
+      - db-cassandra:cassandra
+

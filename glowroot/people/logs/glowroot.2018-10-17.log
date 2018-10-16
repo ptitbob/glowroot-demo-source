@@ -1,0 +1,16 @@
+2018-10-17 01:11:15.683 INFO  org.glowroot - Glowroot version: 0.11.1, built 2018-10-01 23:15:02 +0000
+2018-10-17 01:11:15.689 INFO  org.glowroot - Java version: 10.0.1
+2018-10-17 01:11:19.233 INFO  org.glowroot - plugins loaded: Cassandra Plugin, EJB Plugin, Elasticsearch Plugin, Executor Plugin, Grails Plugin, Hibernate Plugin, HTTP Client Plugin, Java HTTP Server Plugin, JAX-RS Plugin, Jdbc Plugin, JMS Plugin, JSF Plugin, JSP Plugin, Logger Plugin, Play Plugin, Netty Plugin, Quartz Plugin, Redis Plugin, Servlet Plugin, Spring Plugin, Struts Plugin
+2018-10-17 01:11:20.919 INFO  org.glowroot - agent id: people
+2018-10-17 01:11:24.958 INFO  org.glowroot - connected to the central collector http://localhost:8181, version 0.11.1, built 2018-10-01 23:15:02 +0000
+2018-10-17 01:18:23.008 INFO  org.glowroot - Glowroot version: 0.11.1, built 2018-10-01 23:15:02 +0000
+2018-10-17 01:18:23.012 INFO  org.glowroot - Java version: 10.0.1
+2018-10-17 01:18:25.841 INFO  org.glowroot - plugins loaded: Cassandra Plugin, EJB Plugin, Elasticsearch Plugin, Executor Plugin, Grails Plugin, Hibernate Plugin, HTTP Client Plugin, Java HTTP Server Plugin, JAX-RS Plugin, Jdbc Plugin, JMS Plugin, JSF Plugin, JSP Plugin, Logger Plugin, Play Plugin, Netty Plugin, Quartz Plugin, Redis Plugin, Servlet Plugin, Spring Plugin, Struts Plugin
+2018-10-17 01:18:26.616 INFO  org.glowroot - agent id: people
+2018-10-17 01:18:27.086 INFO  org.glowroot - connected to the central collector http://localhost:8181, version 0.11.1, built 2018-10-01 23:15:02 +0000
+2018-10-17 01:18:50.455 ERROR org.glowroot - Glowroot not started, directory in use by another jvm process: /Users/francois/workspaces/sihm/glowroot-demo/exemple/glowroot/people (unable to obtain lock on /Users/francois/workspaces/sihm/glowroot-demo/exemple/glowroot/people/tmp/.lock).  If you are trying to monitor multiple JVM processes on one box from the same agent installation, please see instructions for how to do this on the wiki: https://github.com/glowroot/glowroot/wiki/Agent-Installation-(for-Central-Collector)#monitoring-multiple-jvm-processes-on-one-box
+2018-10-17 01:21:50.459 INFO  org.glowroot - Glowroot version: 0.11.1, built 2018-10-01 23:15:02 +0000
+2018-10-17 01:21:50.464 INFO  org.glowroot - Java version: 10.0.1
+2018-10-17 01:21:54.072 INFO  org.glowroot - plugins loaded: Cassandra Plugin, EJB Plugin, Elasticsearch Plugin, Executor Plugin, Grails Plugin, Hibernate Plugin, HTTP Client Plugin, Java HTTP Server Plugin, JAX-RS Plugin, Jdbc Plugin, JMS Plugin, JSF Plugin, JSP Plugin, Logger Plugin, Play Plugin, Netty Plugin, Quartz Plugin, Redis Plugin, Servlet Plugin, Spring Plugin, Struts Plugin
+2018-10-17 01:21:55.412 INFO  org.glowroot - agent id: people
+2018-10-17 01:21:59.683 INFO  org.glowroot - connected to the central collector http://localhost:8181, version 0.11.1, built 2018-10-01 23:15:02 +0000
