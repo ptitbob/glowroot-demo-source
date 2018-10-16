@@ -13,3 +13,8 @@ glowroot/data/data.h2.db
 
 glowroot/data/
 
+glowroot/logs
+
+glowroot/tmp
+
+
