@@ -17,4 +17,8 @@ glowroot/logs
 
 glowroot/tmp
 
+glowroot/insee/logs/*.log
+glowroot/insee/tmp
+glowroot/people/logs/*.log
+glowroot/people/tmp
 
