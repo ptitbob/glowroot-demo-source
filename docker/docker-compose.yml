@@ -16,7 +16,7 @@ services:
       - 5433:5432
   db-cassandra:
     image: cassandra:3.11
-    container_name: cassandra-db
+    container_name: cassandra-db-glowroot
   glowroot:
     image: glowroot/glowroot-central:0.11.1
     container_name: glowroot-0.11.1
